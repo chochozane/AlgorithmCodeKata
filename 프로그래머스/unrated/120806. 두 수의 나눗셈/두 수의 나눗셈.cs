@@ -5,7 +5,7 @@ public class Solution {
         int answer = 0;
         float result;
         
-        result = ((float)num1 / (float)num2) * 1000;
+        result = ((float)num1 / num2) * 1000;
         answer = (int)result;
 
         return answer;
