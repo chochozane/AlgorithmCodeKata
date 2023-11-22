@@ -7,7 +7,7 @@ public class Solution {
         int sum = 0;
         
         for (int i = 0; i < numbers.Length; i++){
-            sum = (numbers[i] + sum); 
+            sum += numbers[i]; 
         }
         
         answer = (double)sum / numbers.Length;
