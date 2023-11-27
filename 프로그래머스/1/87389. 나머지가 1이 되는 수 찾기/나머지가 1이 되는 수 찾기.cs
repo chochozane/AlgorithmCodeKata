@@ -4,7 +4,7 @@ public class Solution {
     public int solution(int n) {
         int answer = 0;
         
-        if (n >= 3)
+        if (n >= 3 && n <= 1000000)
         {
             for (int x = 1; x < n; x++)
             {
