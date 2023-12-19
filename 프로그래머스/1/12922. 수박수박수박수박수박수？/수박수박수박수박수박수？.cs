@@ -9,7 +9,7 @@ public class Solution
 
         for (int i = 0; i < n ; i++)
         {
-            if (i == 0 || i % 2 == 0) // i 가 0 또는 짝수라면
+            if (i % 2 == 0) // i 가 0 또는 짝수라면
             {
                 answer += su;
             }
