@@ -12,7 +12,6 @@ public class Solution
         Array.Reverse(ch);
         
         answer = new string(ch);
-        
         return answer;
     }
 }
