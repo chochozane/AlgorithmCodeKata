@@ -7,9 +7,9 @@ public class Solution
         if (s.Length == 4 || s.Length == 6) // 길이가 4 혹은 6 인 경우
         {
             // 숫자로만 구성되어있는지 체크
-            for (int i = 0; i < s.Length; i++)
+            foreach (char ch in s)
             {
-                if(s[i] >= '0' && s[i] <= '9') // 숫자로만 구성되어있다면
+                if(ch >= '0' && ch <= '9') // 숫자로만 구성되어있다면
                 {
                     answer = true;
                 }
