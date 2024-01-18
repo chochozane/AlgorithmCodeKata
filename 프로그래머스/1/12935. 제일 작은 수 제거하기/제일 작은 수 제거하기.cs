@@ -1,19 +1,22 @@
-using System.Collections.Generic;
 using System.Linq;
 
-public class Solution
+public class Solution 
 {
-    public int[] solution(int[] arr)
+    public int[] solution(int[] arr) 
     {
-        List<int> arr_list = new List<int>(arr);
-        int min = arr.Min();
-        arr_list.RemoveAll(num => num == min);
+        int[] answer = new int[] {};
         
-        if (arr_list.Count == 0)
+        // arr 의 요소가 1개일 때
+        if (arr.Length == 1)
         {
-            arr_list.Add(-1); 
+            arr[0] = -1;
+            return arr;
         }
         
-        return arr_list.ToArray();
+        // arr 의 요소가 2개 이상일 때 -- Array.Min() - 최솟값 찾기
+        int min = arr.Min();
+        answer = arr.Where(x => x != min).ToArray();
+
+        return answer;
     }
 }
